@@ -1,0 +1,187 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-y: auto;
+  
+}
+
+.Register {
+  /* min-height: 100vh;
+  height: auto;
+  overflow-y: auto;
+  background-image: 
+  linear-gradient(to right, rgba(248, 166, 84, 0.6), rgba(255, 167, 184, 0.6)), 
+  url("login2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: 1s ease-out;
+  padding: 2vmax;  */
+
+  min-height: 100vh;
+  background-image: linear-gradient(to right, rgba(248, 166, 84, 0.6), rgba(255, 167, 184, 0.6)),
+    url("login2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content:center;
+  padding: 2vmax;
+  box-sizing: border-box;
+  overflow-y: auto; 
+}
+
+.RegisterForm {
+  
+  /* background-color: rgb(240, 226, 217);
+  opacity: 0.8;
+  box-shadow: 2px 5px 20px 5px rgb(45, 32, 15);
+  min-height: 50vh;
+  height: auto;
+  width: 70%;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vmax; 
+  margin: 2vmax 0; 
+  box-sizing: border-box;
+  animation: moving 0.8s;
+  transition: 1s ease-in-out; */
+
+
+  position: relative;
+  overflow-y: auto;
+  background-color: rgb(240, 226, 217);
+  opacity: 0.7;
+  box-shadow: 2px 5px 20px 5px rgb(45, 32, 15);
+  min-height: 80vh;
+  height: 100%;
+  min-width: 350px; 
+  width: 70%;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2vmax;
+  transition: 1s ease-in-out;
+  box-sizing: border-box;
+  animation: moving 0.8s;
+
+  /* background-color: rgb(240, 226, 217);
+  opacity: 0.8;
+  box-shadow: 2px 5px 20px 5px rgb(45, 32, 15);
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2vmax;
+  width: 90%;
+  max-width: 500px; 
+  margin: 2vmax auto; 
+  box-sizing: border-box;
+  animation: moving 0.8s;
+  overflow-y: auto;  */
+}
+
+.RegisterInput {
+  /* width: 80%;
+  margin: 1vmax 0; 
+  border: 2px solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+  border-radius: 14px;
+  outline: none;
+  padding: 1vmax 2vmax; */
+
+  width: 80%;
+  margin: 1vmax 0; /* Adds spacing between input fields */
+  border: 2px solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+  border-radius: 14px;
+  outline: none;
+  padding: 1vmax 2vmax;
+}
+
+.RegisterForm > input[type="file"] {
+  border-radius: 30px;
+}
+
+.RegisterForm > input[type="file"]::-webkit-file-upload-button {
+  background-color: rgb(254, 133, 77);
+  color: white;
+  width: 100%;
+  padding: 1vmax;
+  margin-bottom: 3vmax;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: ease-in-out 0.2s;
+}
+
+.RegisterForm > input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: rgb(221, 106, 53);
+}
+
+.RegisterForm > a {
+  align-self: flex-end;
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  width: 5rem;
+  height: 12%;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: rgb(255, 158, 84);
+  transition: 0.2s ease-out;
+}
+
+.btn:hover {
+  width: 6rem;
+  animation: shaking 0.3s infinite;
+  background-color: rgb(249, 143, 62);
+}
+
+span {
+  color: rgb(254, 119, 62);
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(-100%) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+
+@keyframes shaking {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(7deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(-7deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}

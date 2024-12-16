@@ -1,0 +1,137 @@
+.UpdateProfile {
+    height: 100vh;
+    overflow-y: auto;
+    background-image: linear-gradient(
+      to right,
+      rgb(248, 166, 84),
+      rgb(255, 167, 184)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vmax;
+    box-sizing: border-box;
+    transition:1s ease-out;
+  
+  
+  }
+  
+  .UpdateProfilerForm {
+    position: relative;
+    background-color: rgb(240, 226, 217);
+    opacity: 0.7;
+    box-shadow: 2px 5px 20px 5px rgb(45, 32, 15);
+    height: 100%;
+    width: 70%;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vmax;
+    transition: 1s ease-in-out;
+    box-sizing: border-box;
+    animation: moving 0.8s;
+  }
+  
+  /* .UpdateProfileForm > input {
+    box-sizing: border-box;
+    padding: 0vmax 2vmax;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 2vmax;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    outline: none;
+  } */
+ .UpdateProfileInput{
+  width: 80%;
+  margin: 1vmax 2vmax;
+  border: 2px solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+  border-radius: 14px;
+  outline: none;
+  padding: 1vmax 2vmax;
+
+ }
+
+  .UpdateProfileForm > input[type="file"] {
+    border-radius: 30px;
+  }
+
+  .UpdateProfileForm > input[type="file"]::-webkit-file-upload-button {
+    background-color: rgb(254, 133, 77);
+    color: white;
+    width: 100%;
+    padding: 1vmax;
+    /* margin-bottom: 5vmax; */
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: ease-in-out 0.2s;
+  }
+  
+  .UpdateProfileForm > input[type="file"]::-webkit-file-upload-button:hover {
+      background-color: rgb(221, 106, 53);
+  
+  }
+  
+  
+  /* .UpdateProfileForm > a {
+    align-self: flex-end;
+    text-decoration: none;
+    color: black;
+    margin: 2vmax;
+  } */
+  .btn {
+    width: 5rem;
+    height: 10%;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+    background-color: rgb(255, 158, 84);
+    transition: 0.2s ease-out;
+  }
+  
+  .btn:hover {
+    width: 6rem;
+    animation: shaking 0.3s infinite;
+    background-color: rgb(249, 143, 62);
+  }
+  span{
+    color: rgb(254, 119, 62);
+  }
+  
+  @keyframes moving {
+    0% {
+      transform: translateX(-100%) rotate(180deg) ;
+     
+    }
+    
+    100% {
+          transform: translateX(0)rotate(360deg)  ;
+      
+    }
+  }
+  @keyframes shaking {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    25% {
+      transform: rotateZ(7deg);
+    }
+    50% {
+      transform: rotateZ(0deg);
+    }
+    75% {
+      transform: rotateZ(-7deg);
+    }
+    100% {
+      transform: rotateZ(0deg);
+    }
+  }
+  

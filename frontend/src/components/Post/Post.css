@@ -1,0 +1,172 @@
+.post {
+  /* width: 70%; */
+  width: 60%;
+  /* height: 50%; */
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 15px black;
+  padding: 0 1vmax 1vmax;
+  margin: 3vmax 0;
+  animation: scaling 0.7s ;
+}
+@keyframes scaling {
+    0% {
+      transform: scale(0);
+     
+    }
+    
+    40% {
+          transform:scale(1.2);
+
+      
+    }
+    100% {
+          transform:scale(1);
+
+      
+    }
+  }
+.postHeader {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 1vmax;
+}
+
+.postHeader > button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 100%;
+  color: black;
+}
+
+.post > img {
+  width: 100%;
+  transition: all 0.4s;
+  /* height: 100%; */
+
+}
+
+.post > img:hover {
+transform: scale(1.02);
+  /* height: 100%; */
+
+}
+
+.postDetails {
+  /* background-color: blue; */
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column;*/
+  justify-content: left; 
+  padding: 1vmax;
+}
+
+.postDetails > button {
+  color: black;
+  margin: 1vmax 1vmax;
+  border: none;
+  background: rgb(216, 200, 184);
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+.postDetails > a {
+  text-decoration: none;
+  color: black;
+  margin: 1vmax;
+}
+
+.DialogBox {
+  min-width: 400px;
+  height: 100vh;
+  padding: 2vmax;
+}
+.postFooter{
+  display: flex;
+}
+.postFooter > button {
+  border-radius: 100%;
+  transition: all 0.3s;
+  color: black;
+  margin: 0 1vmax;
+  /* margin: auto; */
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.postFooter > button:hover {
+  transform:scale(1.5);
+}
+
+.postFooter > button > svg {
+  font-size: 1.5vmax;
+}
+
+.DialogBox{
+  max-width: 500px;
+  height: 100vh;
+  padding: 2vmax;
+  
+ 
+}
+
+
+.commentForm{
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin: 1vmax;
+}
+
+.commentForm > input{
+  width: 100%;
+  padding: 1vmax 2vmax;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 30px 0 0 30px;
+  font: 100 1vmax "Roboto" , sans-serif;
+
+}
+
+.commentForm > button{
+  background-color: rgb(65, 25, 12);
+  border-radius: 0 30px 30px 0;
+}
+.commentForm > button:hover{
+  background-color: rgb(172, 93, 43);
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 1200px) {
+  .post {
+    width: 75%;
+    /* height: 50%; */
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px black;
+    padding: 1vmax 1vmax;
+    margin: 3vmax 0;
+    animation: scaling 0.7s ;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .post {
+    width: 90%;
+    /* height: 50%; */
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px black;
+    padding: 1vmax 1vmax;
+    margin: 3vmax 0;
+    animation: scaling 0.7s ;
+  }
+}
+
+
+
+

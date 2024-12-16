@@ -1,0 +1,187 @@
+.newpost {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, rgb(248, 166, 84), rgb(255, 167, 184));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+}
+
+/* Animation for form scaling */
+@keyframes scaling {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.newpostform {
+  background-color: white;
+  max-height: 90vh;
+  width: 70%;
+  border-radius: 50px;
+  box-sizing: border-box;
+  padding: 2vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: scaling 0.8s;
+  overflow-y: auto;
+}
+
+/* Hide scrollbar in form */
+.newpostform {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.newpostform::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.newpostform > img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.newpostform > input[type="text"] {
+  width: 100%;
+  padding: 1vmax;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-weight: 100;
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.newpostform > input[type="file"] {
+  border-radius: 30px;
+  margin: 2vmax;
+}
+.newpostform > input[type="file"]::-webkit-file-upload-button {
+  background-color: rgb(254, 133, 77);
+  color: white;
+  width: 100%;
+  padding: 1vmax;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: ease-in-out 0.2s;
+}
+
+.newpostform > input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: rgb(221, 106, 53);
+}
+
+.newpostform .privacy-checkbox {
+  margin: 1vmax 0;
+  display: flex;
+  align-items: center;
+}
+
+.newpostform .privacy-checkbox label {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.newpostform .privacy-checkbox input {
+  margin-right: 0.5vmax;
+}
+
+.newpost Button {
+  border-radius: 30px;
+  color: white;
+  background-color: rgb(53, 15, 1);
+}
+
+.newpost Button:hover {
+  animation: shaking 0.3s infinite;
+  background-color: rgb(110, 31, 3);
+}
+
+/* Shaking animation for button */
+@keyframes shaking {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(7deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(-7deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+/* Responsive Design */
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+  .newpostform {
+    width: 90%;
+    height: 70%;
+    padding: 3vmax;
+  }
+
+  .newpostform > img {
+    width: 70%;
+  }
+
+  .newpostform > input[type="text"],
+  .newpostform > input[type="file"]::-webkit-file-upload-button {
+    font-size: 1.1rem;
+  }
+
+  .newpost Button {
+    font-size: 1rem;
+    padding: 1vmax;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .newpostform {
+    width: 100%;
+    max-height: 70%;
+    padding: 4vmax;
+    border-radius: 20px;
+  }
+
+  .newpostform > img {
+    width: 80%;
+  }
+
+  .newpostform > input[type="text"] {
+    font-size: 1rem;
+    padding: 1vmax;
+  }
+
+  .newpostform > input[type="file"]::-webkit-file-upload-button {
+    font-size: 1rem;
+    padding: 1vmax;
+  }
+
+  .newpost .privacy-checkbox label {
+    font-size: 1rem;
+  }
+
+  .newpost Button {
+    font-size: 0.9rem;
+    padding: 1vmax;
+  }
+}

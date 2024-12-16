@@ -1,0 +1,112 @@
+.Login {
+  height: 100vh;
+  /* background-image: linear-gradient(
+    to right,
+    rgb(248, 166, 84),
+    rgb(255, 167, 184)
+  ); */
+  /* background-image:url("login.jpeg") ; */
+  background-image: 
+  linear-gradient(to right, rgba(248, 166, 84, 0.6), rgba(255, 167, 184, 0.6)), 
+  url("login2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+  transition:1s ease-out;
+  /* animation: moving 1s; */
+
+
+}
+
+.LoginForm {
+  position: relative;
+  background-color: rgb(240, 226, 217);
+  backdrop-filter: bl;
+  opacity: 0.7;
+  box-shadow: 2px 5px 20px 5px rgb(45, 32, 15);
+  height: 100%;
+  width: 50%;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vmax;
+  transition: 1s ease-in-out;
+  box-sizing: border-box;
+  animation: moving 0.8s;
+}
+
+.LoginForm > input {
+  box-sizing: border-box;
+  padding: 1vmax 2vmax;
+  width: 80%;
+  border-radius: 1%;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 2vmax;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+  outline: none;
+}
+
+.LoginForm > a {
+  align-self: flex-end;
+  text-decoration: none;
+  color: black;
+  margin: 2vmax;
+}
+.btn {
+  width: 10%;
+  height: 6%;
+  font-size: 0.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgb(255, 158, 84);
+  transition: 0.2s ease-out;
+}
+span{
+  font-weight: bold;
+  color: rgb(235, 92, 9);
+}
+span:hover{
+  color: rgb(174, 65, 2);
+}
+.btn:hover {
+  width: 11%;
+  animation: shaking 0.3s infinite;
+  background-color: rgb(249, 143, 62);
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(-100%) rotate(180deg) ;
+   
+  }
+  
+  100% {
+        transform: translateX(0)rotate(360deg)  ;
+    
+  }
+}
+@keyframes shaking {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(7deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(-7deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}

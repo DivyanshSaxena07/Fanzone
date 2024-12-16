@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  /* background-color: rgb(84, 22, 1); */
+}
+
+.loading {
+  /* font-size: 56rem; */
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* margin-left: 12rem; */
+  /* animation: rotating 2s infinite; */
+}
+
+/* @keyframes rotating {
+    0% {
+      transform: rotate(0deg) ;
+      transform-origin: center;
+     
+    }
+    
+    100% {
+          transform:rotate(360deg) ;
+          transform-origin: center;
+
+      
+    }
+  } */

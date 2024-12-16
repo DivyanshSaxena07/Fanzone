@@ -1,0 +1,72 @@
+.add-funds-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(
+        to right,
+        rgb(248, 166, 84),
+        rgb(255, 167, 184)
+      );    color: white;
+  }
+  
+  .content-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    animation: scaling 0.8s;
+  }
+  @keyframes scaling {
+    0% {
+      transform: scale(0);
+    }
+    40% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .funds-display {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .funds-amount {
+    font-weight: bold;
+    color: #99e904;
+  }
+  
+  .input-field {
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 2%;
+    width: 250px;
+  }
+  
+  .add-funds-button {
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background-color: rgb(254, 133, 77);
+    transition: 0.4s ease-out;
+  }
+  .add-funds-button:hover {
+    width: 160px;
+    background-color: rgb(250, 126, 69);
+  }
+  
