@@ -1,3 +1,10 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-y: auto;
+}
+
 .Login {
   height: 100vh;
   /* background-image: linear-gradient(
@@ -6,7 +13,7 @@
     rgb(255, 167, 184)
   ); */
   /* background-image:url("login.jpeg") ; */
-  background-image: 
+  /* background-image: 
   linear-gradient(to right, rgba(248, 166, 84, 0.6), rgba(255, 167, 184, 0.6)), 
   url("login2.jpeg");
   background-size: cover;
@@ -16,28 +23,50 @@
   justify-content: center;
   padding: 2vmax;
   box-sizing: border-box;
-  transition:1s ease-out;
+  transition:1s ease-out; */
   /* animation: moving 1s; */
 
-
+  min-height: 60vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(248, 166, 84, 0.6),
+      rgba(255, 167, 184, 0.6)
+    ),
+    url("login.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .LoginForm {
   position: relative;
+  /* overflow-y: auto; */
   background-color: rgb(240, 226, 217);
-  backdrop-filter: bl;
-  opacity: 0.7;
+  opacity: 0.4;
   box-shadow: 2px 5px 20px 5px rgb(45, 32, 15);
-  height: 100%;
-  width: 50%;
+  min-height: 80vh;
+  height: 80%;
+  min-width: 360px;
+  width: 60%;
   border-radius: 2%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 2vmax;
   transition: 1s ease-in-out;
   box-sizing: border-box;
   animation: moving 0.8s;
+  transition: 0.4s ease-in-out;
+}
+.LoginForm:hover {
+  opacity: 0.9;
 }
 
 .LoginForm > input {
@@ -69,11 +98,11 @@
   background-color: rgb(255, 158, 84);
   transition: 0.2s ease-out;
 }
-span{
+span {
   font-weight: bold;
   color: rgb(235, 92, 9);
 }
-span:hover{
+span:hover {
   color: rgb(174, 65, 2);
 }
 .btn:hover {
@@ -84,13 +113,11 @@ span:hover{
 
 @keyframes moving {
   0% {
-    transform: translateX(-100%) rotate(180deg) ;
-   
+    transform: translateX(-100%) rotate(180deg);
   }
-  
+
   100% {
-        transform: translateX(0)rotate(360deg)  ;
-    
+    transform: translateX(0) rotate(360deg);
   }
 }
 @keyframes shaking {
@@ -110,3 +137,14 @@ span:hover{
     transform: rotateZ(0deg);
   }
 }
+
+@media (max-width: 860px) {
+  .Login {
+  background-image: 
+    linear-gradient(to right, rgba(248, 166, 84, 0.6), rgba(255, 167, 184, 0.6)),
+    url("demo.avif");
+  background-size: cover;
+  background-position: center;
+  }
+}
+

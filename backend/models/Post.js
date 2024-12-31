@@ -6,6 +6,10 @@ const postSchema = new mongoose.Schema({
     public_id: String,
     url: String,
   },
+  video: {                  // Add this for video support
+    public_id: String,
+    url: String,
+  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
@@ -33,6 +37,11 @@ const postSchema = new mongoose.Schema({
       },
     },
   ],
+
+  views: {
+    type: Number,
+    default: 0,
+  },
 
   isPrivate: {
     type: Boolean,

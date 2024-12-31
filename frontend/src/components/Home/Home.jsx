@@ -21,6 +21,9 @@ const Home = () => {
     dispatch(getAllUsers());
   }, [dispatch]);
 
+
+  
+
   useEffect(() => {
     if (error) {
       alert.error(error);

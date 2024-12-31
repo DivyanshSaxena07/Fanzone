@@ -1,4 +1,4 @@
-.add-funds-container {
+/* .add-funds-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,4 +69,121 @@
     width: 160px;
     background-color: rgb(250, 126, 69);
   }
+   */
+
+
+   /* new code beautiful ============================ */
+
+   /** Updated Funds CSS **/
+.add-funds-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background-image: linear-gradient(to right, #f8a654, #ffa7b8);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  animation: scaling 0.8s;
+}
+
+@keyframes scaling {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.funds-display {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: center;
+}
+
+.funds-amount {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.input-field {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.add-funds-button {
+  width: 100%;
+  max-width: 200px;
+  font-size: 1rem;
+  border-radius: 25px;
+  background-color: #fe854d;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.add-funds-button:hover {
+  background-color: #f9703e;
+  box-shadow: 0 4px 15px rgba(255, 105, 85, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
   
+  .funds-display {
+    font-size: 1rem;
+  }
+  
+  .content-box {
+    width: 90%;
+  }
+  
+  .add-funds-button {
+    font-size: 0.9rem;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .funds-display {
+    font-size: 0.9rem;
+  }
+
+  .add-funds-button {
+    font-size: 0.8rem;
+    max-width: 160px;
+  }
+}

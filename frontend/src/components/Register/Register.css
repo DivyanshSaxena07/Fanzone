@@ -57,7 +57,7 @@ html, body {
   position: relative;
   overflow-y: auto;
   background-color: rgb(240, 226, 217);
-  opacity: 0.7;
+  opacity: 0.4;
   box-shadow: 2px 5px 20px 5px rgb(45, 32, 15);
   min-height: 80vh;
   height: 100%;
@@ -72,6 +72,7 @@ html, body {
   transition: 1s ease-in-out;
   box-sizing: border-box;
   animation: moving 0.8s;
+  transition: 0.4s ease-in;
 
   /* background-color: rgb(240, 226, 217);
   opacity: 0.8;
@@ -88,6 +89,9 @@ html, body {
   box-sizing: border-box;
   animation: moving 0.8s;
   overflow-y: auto;  */
+}
+.RegisterForm:hover{
+opacity: 0.9;
 }
 
 .RegisterInput {
@@ -161,7 +165,7 @@ span {
 
 @keyframes moving {
   0% {
-    transform: translateX(-100%) rotate(180deg);
+    transform: translateX(-100%) rotate(360deg);
   }
   100% {
     transform: translateX(0) rotate(360deg);
@@ -183,5 +187,15 @@ span {
   }
   100% {
     transform: rotateZ(0deg);
+  }
+}
+
+@media (max-width: 860px) {
+  .Register {
+  background-image: 
+    linear-gradient(to right, rgba(248, 166, 84, 0.6), rgba(255, 167, 184, 0.6)),
+    url("demo.avif");
+  background-size: cover;
+  background-position: center;
   }
 }
